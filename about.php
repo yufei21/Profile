@@ -1,5 +1,5 @@
 <?php
-// ================= MẢNG DỮ LIỆU CÁ NHÂN =================
+
 $profile = [
     'name' => 'Ôn Ngọc Phi',
     'title' => 'Sinh viên Toán - Công nghệ thông tin | Định hướng Web Developer',
@@ -42,7 +42,6 @@ $projects = [
     ]
 ];
 
-// Lấy chữ cái đầu để làm huy hiệu (monogram)
 $nameParts = explode(' ', trim($profile['name']));
 $monogram = mb_substr(end($nameParts), 0, 1, 'UTF-8');
 $firstPart = reset($nameParts);
@@ -62,7 +61,7 @@ $monogram = mb_strtoupper(mb_substr($firstPart, 0, 1, 'UTF-8') . mb_substr(end($
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* ================= TOKENS: SỔ TAY TOÁN HỌC / CHALKBOARD ================= */
+
         :root {
             --bg: #14241c;
             --bg-soft: #1b3226;
@@ -119,7 +118,7 @@ $monogram = mb_strtoupper(mb_substr($firstPart, 0, 1, 'UTF-8') . mb_substr(end($
             color: #1b2a1e;
         }
 
-        /* ================= HEADER / HERO ================= */
+
         header {
             padding: 130px 0 90px;
             text-align: center;
@@ -202,7 +201,7 @@ font-size: 0.7rem;
             margin: auto;
         }
 
-        /* ================= MENU (NAVBAR) ================= */
+
         nav {
             background: rgba(20, 36, 28, 0.82);
             backdrop-filter: blur(10px);
@@ -237,7 +236,6 @@ font-size: 0.7rem;
             border-bottom-color: var(--chalk-yellow);
         }
 
-        /* ================= SECTIONS ================= */
         section {
             padding: 84px 0;
         }
@@ -265,7 +263,6 @@ font-size: 0.7rem;
             color: var(--ink);
         }
 
-        /* ================= GIỚI THIỆU ================= */
         .about-grid {
             display: grid;
             grid-template-columns: 1.1fr 0.9fr;
@@ -342,7 +339,6 @@ font-size: 0.7rem;
             color: var(--chalk-yellow);
         }
 
-        /* ================= KỸ NĂNG ================= */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -382,7 +378,6 @@ font-size: 0.7rem;
             color: var(--chalk-yellow);
         }
 
-        /* ================= DỰ ÁN ================= */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -444,7 +439,6 @@ transition: border-color 0.25s ease, transform 0.25s ease;
             font-weight: 500;
         }
 
-        /* ================= LIÊN HỆ ================= */
         .contact-card {
             border: 1px dashed var(--card-border);
             border-radius: 6px;
@@ -495,7 +489,6 @@ transition: border-color 0.25s ease, transform 0.25s ease;
             transform: translateY(-2px);
         }
 
-        /* ================= FOOTER ================= */
         footer {
             text-align: center;
             padding: 32px;
@@ -505,7 +498,6 @@ transition: border-color 0.25s ease, transform 0.25s ease;
             font-size: 0.8rem;
         }
 
-        /* ================= REVEAL ON SCROLL ================= */
         .reveal {
             opacity: 0;
 transform: translateY(16px);
@@ -517,7 +509,6 @@ transform: translateY(16px);
             transform: translateY(0);
         }
 
-        /* ================= RESPONSIVE ================= */
         @media (max-width: 768px) {
             .about-grid {
                 grid-template-columns: 1fr;
@@ -551,7 +542,6 @@ transform: translateY(16px);
 
 <body>
 
-    <!-- HEADER -->
     <header>
         <div class="container">
             <p class="hero-eyebrow">&gt; sinh_vien.dinh_huong == "Web Developer"<span class="cursor"></span></p>
@@ -561,7 +551,6 @@ transform: translateY(16px);
         </div>
     </header>
 
-    <!-- MENU -->
     <nav>
         <div class="nav-container">
             <a href="#about">Giới thiệu</a>
@@ -571,7 +560,6 @@ transform: translateY(16px);
         </div>
     </nav>
 
-    <!-- GIỚI THIỆU -->
     <section id="about">
         <div class="container">
             <div class="section-title reveal">
@@ -623,7 +611,6 @@ transform: translateY(16px);
         </div>
     </section>
 
-    <!-- KỸ NĂNG -->
     <section id="skills">
         <div class="container">
             <div class="section-title reveal">
@@ -642,7 +629,6 @@ transform: translateY(16px);
         </div>
     </section>
 
-    <!-- DỰ ÁN -->
     <section id="projects">
         <div class="container">
             <div class="section-title reveal">
